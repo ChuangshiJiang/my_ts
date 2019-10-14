@@ -1,6 +1,10 @@
-function identity<T>(arg: T[]): T[] {
-  console.log(arg.length);
-  return arg;
+class GenericNumber<T> {
+  zeroValue: T;
+  add: (x: T, y: T) => T
 }
 
-let output = identity([]);
+let myGenericNumber = new GenericNumber<number>();
+myGenericNumber.zeroValue = 0;
+myGenericNumber.add = function (x:number,y:number) {
+  return x+y;
+}
