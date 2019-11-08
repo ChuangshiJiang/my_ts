@@ -1,12 +1,28 @@
-class BirthWhisperer {
-  chirping:string;
-  constructor(message:string) {
-    this.chirping = message;
-  }
-  chirp(){
-    return 'Ah~ oh~' + this.chirping;
-  }
+interface Square {
+  kind: 'square';
+  size: number
 }
 
-let birthWhisperer = new BirthWhisperer('coo-coo-coo...Hello');
-document.body.innerHTML = birthWhisperer.chirp();
+interface Rectangle {
+  kind: '';
+  width: number;
+  height: number;
+}
+
+interface Circle {
+  kind: 'circle';
+  radius: 'number'
+}
+
+type Shape = Square | Rectangle | Circle;
+
+function area(s:Shape) {
+  switch (s.kind) {
+    case 'square':
+      
+      break;
+  
+    default:
+      break;
+  }
+}
