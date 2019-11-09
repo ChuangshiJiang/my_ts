@@ -1,28 +1,23 @@
-interface Square {
-  kind: 'square';
-  size: number
+let arr: any = [1, 'hello', false];
+
+for (let entry of arr) {
+  console.log(entry);
 }
 
-interface Rectangle {
-  kind: '';
-  width: number;
-  height: number;
+for (let index in arr) {
+  console.log(index);
 }
 
-interface Circle {
-  kind: 'circle';
-  radius: 'number'
+let pets = new Set(['cat','dog','hamster']);
+console.log('pets',pets);
+pets['species']='mammals';
+
+for (let pet in pets) {
+  console.log(pet);
 }
 
-type Shape = Square | Rectangle | Circle;
-
-function area(s:Shape) {
-  switch (s.kind) {
-    case 'square':
-      
-      break;
-  
-    default:
-      break;
-  }
+for (let pet of pets) {
+  console.log(pet);  
 }
+
+console.log('pets',pets);
