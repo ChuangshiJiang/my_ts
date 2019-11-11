@@ -1,23 +1,7 @@
-let arr: any = [1, 'hello', false];
+import validator from './export_test.js';
 
-for (let entry of arr) {
-  console.log(entry);
-}
+let strings: string[] = ['Hello', '98025', '101'];
 
-for (let index in arr) {
-  console.log(index);
-}
-
-let pets = new Set(['cat','dog','hamster']);
-console.log('pets',pets);
-pets['species']='mammals';
-
-for (let pet in pets) {
-  console.log(pet);
-}
-
-for (let pet of pets) {
-  console.log(pet);  
-}
-
-console.log('pets',pets);
+strings.forEach(element => {
+  console.log(`"${element}" ${validator(element)}?"matches":"does not match"`);
+});
