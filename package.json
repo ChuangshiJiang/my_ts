@@ -25,6 +25,7 @@
   "homepage": "https://github.com/ChuangshiJiang/my_ts#readme",
   "dependencies": {
     "concurrently": "^5.0.0",
+    "express": "^4.17.1",
     "lite-server": "^2.5.4"
   }
 }
