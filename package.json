@@ -1,0 +1,23 @@
+{
+  "name": "nodets",
+  "version": "1.0.0",
+  "description": "nodts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChuangshiJiang/nodeTs.git"
+  },
+  "keywords": [
+    "node",
+    "ts"
+  ],
+  "author": "jcs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChuangshiJiang/nodeTs/issues"
+  },
+  "homepage": "https://github.com/ChuangshiJiang/nodeTs#readme"
+}
