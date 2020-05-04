@@ -76,3 +76,4 @@ const animal = new Cat();
 
 animal.makeSound();
 animal.move();
+
