@@ -81,7 +81,7 @@
     /* Experimental Options */
     "experimentalDecorators": true,
     /* Enables experimental support for ES7 decorators. */
-    // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
+    "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
 
     /* Advanced Options */
     "forceConsistentCasingInFileNames": true
@@ -89,7 +89,7 @@
   },
   "include": [
     // 需要编译的ts文件一个*表示文件匹配**表示忽略文件的深度问题
-    "./src/**/*.ts"
+    "./src/**/*.ts", "src/designpattern/decorator/decorator.js"
   ],
   "exclude": [
     "node_modules",
