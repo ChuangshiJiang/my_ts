@@ -19,6 +19,7 @@
 <script>
     const father = document.getElementById('father');
     father.addEventListener('click',(e)=>{
+      debugger;
         if(e.target.tagName.toLowerCase() === 'a'){
             e.preventDefault();
             alert(`我是${e.target.innerText}`);
