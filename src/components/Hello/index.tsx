@@ -10,6 +10,7 @@ interface State {
 }
 
 function Hello({ name, enthusiasmLevel = 1 }: Props) {
+  debugger;
   const [currentEnthusiasmLevel, setCurrentEnhusiasmLevel] = useState(enthusiasmLevel);
   if (enthusiasmLevel <= 0) {
     throw new Error("You could be a little more enthusiastic. :D");
