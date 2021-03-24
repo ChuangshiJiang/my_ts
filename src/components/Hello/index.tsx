@@ -5,8 +5,12 @@ export interface Props {
   enthusiasmLevel?: number;
 }
 
+interface State {
+  currentEnthusiasmLevel: number;
+}
 
 function Hello({ name, enthusiasmLevel = 1 }: Props) {
+  const [currentEnthusiasmLevel,setCurrentEnhusiasmLevel] = useState<State>(enthusiasmLevel);
   if (enthusiasmLevel <= 0) {
     throw new Error("You could be a little more enthusiastic. :D");
 
