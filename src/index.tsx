@@ -7,7 +7,8 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Hello name="jack" enthusiasmLevel={2} />
+    {/* <Hello name="jack" enthusiasmLevel={2} /> */}
+    <App></App>
   </React.StrictMode>,
   document.getElementById('root')
 );
